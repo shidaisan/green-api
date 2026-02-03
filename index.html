@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GREEN-API Test Page</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <div class="panel">
+      <div class="left">
+        <div class="block">
+          <input id="idInstance" class="input" placeholder="idInstance" autocomplete="off" />
+          <input id="apiTokenInstance" class="input" placeholder="ApiTokenInstance" autocomplete="off" />
+          <button id="btnGetSettings" class="btn">getSettings</button>
+          <button id="btnGetState" class="btn">getStateInstance</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="block">
+          <input id="chatIdMsg" class="input" placeholder="77771234567" autocomplete="off" />
+          <textarea id="message" class="textarea" placeholder="Hello World"></textarea>
+          <button id="btnSendMessage" class="btn">sendMessage</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="block">
+          <input id="chatIdFile" class="input" placeholder="77771234567" autocomplete="off" />
+          <input id="fileUrl" class="input" placeholder="https://my.site.com/img/horse.png" autocomplete="off" />
+          <button id="btnSendFile" class="btn">sendFileByUrl</button>
+        </div>
+
+        <div class="hint">
+          <div><b>Подсказка:</b> chatId обычно вида <code>77771234567@c.us</code>, но можно вводить просто номер — страница сама добавит <code>@c.us</code>.</div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="title">Ответы:</div>
+        <textarea id="response" class="response" readonly></textarea>
+      </div>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
